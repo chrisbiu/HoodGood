@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>About Us</title>
+    <link type="text/css" rel="stylesheet" href="about-us.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="welcome-page.html"><img src="HoodGoodLogo.jpg" width="200px" height="200px"></a>
+        </div>
+    </header>
+    <ul class="topnav" id="myTopnav">
+        <li><a class="active" href="about-us.html">About Us</a></li>
+        <li><a href="hg-media.html">H G Media</a></li>
+        <li><a href="directory.html">Directory</a></li>
+        <li class="icon"><a href="javascript:void(0);" style="font-size:15px;" onclick="myFunction()">☰</a></li>
+    </ul>
+    <script>
+        function myFunction() {
+            var x = document.getElementById("myTopnav");
+            if (x.className === "topnav") {
+                x.className = " responsive";
+            } else {
+                x.className = "topnav";
+            }
+        }
+    </script>
+    <article>
+        <h2>Our Mission</h2>
+        <p>
+            HooDGooD Ent’s mission is to shine a light on artists/businesses/entrepreneurs within the
+            community, renewing the public interest and involvement. Through social media, [ video, paper}
+            news reporting on business related topics that are sensitive to business and public interest respectively.
+        </p>
+        <h3>About us.</h3>
+        <p>
+            “HooDGooD is finding out who does good in their community.”
+
+
+        </p>
+        <aside>
+            The only true community, is one where the commonwealth, serves the community interest, and belongs to that
+            community.
+                                Chritopher Johnson Founder of Binary Universe
+            <figure>
+                <img src="sun%20and%20moon.png">
+                <figcaption>Check us out <a href="binaryunverse.tech">here</a></figcaption>
+            </figure>
+        </aside>
+        <h3>Who’s behind HooDGood?</h3>
+        <figure class="fig1">
+            <img src="welcomepage1.JPG">
+            <figcaption>MrHooDGooD (Anthony Oliver [HoodGood Ent])</figcaption>
+        </figure>
+        <h3>Why was HoodGood established?</h3>
+        <p>
+            Hoodgood intends to focus on economic development within communities that require the most economic reform.
+        </p>
+        <h3>Where can you find us at?</h3>
+        <p>
+            You can find us @HoodGoodz.net
+            Or call us (708)825-1684
+        </p>
+        <figure class="fig2">
+            <img src="fbupload.jpg">
+            <figcaption>
+                Christopher Johnson [ Binary Universe ]
+            </figcaption>
+        </figure>
+    </article>
+    <script>
+        document.getElementById("main").onclick = function() {blockFunction()};
+        function blockFunction () {
+            document.getElementById("main").onclick = "myMain";
+
+        }
+    </script>
+    <footer>
+       <img src="HoodGoodLogo.jpg">
+       <img src="sun and moon.png">
+       <p>
+            Hood Good Media is property of HoodGood Entertainment in partnership with Binary Universe.
+            All rights reserved.
+       </p>
+    </footer>
+</body>
+</html>
