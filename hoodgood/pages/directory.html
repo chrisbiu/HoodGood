@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hood Good Media</title>
+    <link type="text/css" rel="stylesheet" href="directory.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="index.html"><img src="HoodGoodLogo.jpg" width="200px" height="200px"></a>
+        </div>
+    </header>
+    <ul class="topnav" id="myTopnav">
+        <li><a class="active" href="about-us.html">About Us</a></li>
+        <li><a href="hg-media.html">H G Media</a></li>
+        <li><a href="directory.html">Directory</a></li>
+        <li class="icon"><a href="javascript:void(0);" style="font-size:15px;" onclick="myFunction()">☰</a></li>
+    </ul>
+    <script>
+        function myFunction() {
+            var x = document.getElementById("myTopnav");
+            if (x.className === "topnav") {
+                x.className = " responsive";
+            } else {
+                x.className = "topnav";
+            }
+        }
+    </script>
+    <section>
+        <figure>
+
+            <video width="320" height="240" controls>
+              <source src="My Video.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+            <figcaption><strong>Hood Good Media is LIVE !!!</strong></figcaption>
+        </figure>
+    </section>
+    <aside>
+        <article>
+            <h3>
+                What does the HG directory do ?
+            </h3>
+                <p>
+
+                Our directory is dedicated to the individual [ artist, business, entrepreneur ] who is looking for exposure,
+                and wants to publishing on our site completely free of charge. Check out the terms and conditions
+                <a href="directoryterms.pdf">here</a>. Sign up today <a href="sign-up.html">www.hoodgoodz.net/sign-up</a>
+                </p>
+        </article>
+    </aside>
+    <footer>
+       <img src="HoodGoodLogo.jpg">
+       <img src="sun and moon.png">
+       <p>
+            Hood Good Media is property of Hood Good Entertainment in partnership with Binary Universe.
+            All rights reserved.
+       </p>
+    </footer>
+
+</body>
+</html>

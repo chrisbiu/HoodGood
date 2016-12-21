@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link type="text/css" rel="stylesheet" href="sign-up.css">
+</head>
+<body>
+    <h1 id="signup">
+        <figure>
+            <img src="HoodGoodLogo.jpg" width="500px" height="500px">
+            <figcaption>Your Neighborhood Business Media.</figcaption>
+        </figure>
+    </h1>
+    <form id="infoSubmit">
+        <fieldset>
+            <legend>
+                Business Information
+            </legend>
+            Company Name:<br>
+            <input type="text" name="companyName" id="companyName" required><br>
+            Address:<br>
+            <input type="text" name="address" id="address" required><br>
+            Email Address:<br>
+            <input type="email" name="email" id="email" required=""><br>
+            Telephone Number:<br>
+            <input type="tel" name="telephoneNumber" id="telephoneNumber" required><br>
+            <legend>Industry</legend><br>
+            <select name="businessType" id="businessType" required>
+            <option value="null"></option>
+            <option value="barberShop">Barber Shop</option>
+            <option value="Salon">Salon</option>
+            <option value="restaurant">Restaurant</option>
+            </select><br>
+            <input type="submit" value="Submit" onclick="store()"><br>
+        </fieldset>
+    </form>
+    <script>
+        function store() {
+            var inputEmail = document.getElementById("email");
+            localStorage.setItem("email", inputEmail.valueOf());
+            var inputCompanyName = document.getElementById("companyName");
+            localStorage.setItem("companyName", inputCompanyName.valueOf());
+            var inputAddress = document.getElementById("address");
+            localStorage.setItem("address", inputAddress.valueOf());
+            var inputTel = document.getElementById("telephoneNumber");
+            localStorage.setItem("telephoneNumber", inputTel.valueOf());
+        }
+    </script>
+
+</body>
+</html>
